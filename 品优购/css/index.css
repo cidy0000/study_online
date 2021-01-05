@@ -1,0 +1,584 @@
+.main {
+    position: relative;
+    width: 980px;
+    height: 455px;
+    /* background-color: burlywood; */
+    margin-left: 220px;
+    margin-top: 50px;
+}
+
+
+/* 轮播图 */
+
+.focus {
+    position: relative;
+    width: 721px;
+    height: 455px;
+    overflow: hidden;
+    /* background-color: chartreuse; */
+}
+
+.navs {
+    width: 4200px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: -721px;
+}
+
+.navs li {
+    float: left;
+    width: 721px;
+    height: 455;
+}
+
+.navs li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 左右按钮 */
+
+.prev,
+.next {
+    position: absolute;
+    top: 20%;
+    margin-top: 100px;
+    width: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, .3);
+    font-size: 25px;
+}
+
+.prev {
+    left: 1px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.next {
+    right: 1px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.prev:hover,
+.next:hover {
+    background: rgba(255, 255, 255, .6);
+}
+
+
+/* 底部小圆点 */
+
+.circle {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 13px;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 7px;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 3px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.circle li:hover {
+    transform: scale(1.2);
+}
+
+.circle .selected {
+    background-color: red;
+}
+
+
+/* 底部小圆点结束 */
+
+.newflash {
+    position: absolute;
+    top: 0;
+    right: 3px;
+    float: right;
+    width: 249px;
+    height: 455px;
+    /* background-color: chocolate; */
+}
+
+.news {
+    height: 165px;
+    /* background-color: pink; */
+    border: 1px solid #e4e4e4;
+}
+
+.news_hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+
+.news_hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news_hd .more {
+    float: right;
+}
+
+.news_hd .more::after {
+    font-family: 'icomoon';
+    content: '\e920';
+}
+
+.news_bd {
+    padding: 5px 15px 0;
+}
+
+.news_bd ul li {
+    height: 24px;
+    /* margin: 0 auto; */
+    line-height: 24px;
+    overflow: hidden;
+    /* overflow:hidden文字超出的不显示 */
+    white-space: nowrap;
+    /* white-space: nowrap;文字必须一行显示 */
+    text-overflow: clip;
+    /* text-overflow: clip;文字超出显示省略号 */
+}
+
+.lifeservice {
+    overflow: hidden;
+    height: 214px;
+    /* background-color: rebeccapurple; */
+    border: 1px solid #e4e4e4;
+}
+
+.lifeservice ul {
+    width: 250px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 62px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    /* background-color: pink; */
+    margin-top: 12px;
+}
+
+.lifeservice ul li .huafei {
+    background: url(../images/icons.png) no-repeat -19px -15px;
+}
+
+.jipiao {
+    background: url(../images/icons.png) no-repeat -79px -15px;
+}
+
+.dianying {
+    background: url(../images/icons.png) no-repeat -140px -15px;
+}
+
+.youxi {
+    background: url(../images/icons.png) no-repeat -206px -15px;
+}
+
+.caipiao {
+    background: url(../images/icons.png) no-repeat -17px -85px;
+}
+
+.jiayou {
+    background: url(../images/icons.png) no-repeat -17px -158px;
+}
+
+.gongjiao {
+    background: url(../images/icons.png) no-repeat -17px -15px;
+}
+
+.huoche {
+    background: url(../images/icons.png) no-repeat -17px -15px;
+}
+
+.jiaoyi {
+    background: url(../images/icons.png) no-repeat -17px -15px;
+}
+
+.yinhang {
+    background: url(../images/icons.png) no-repeat -79px -15px;
+}
+
+.qianbao {
+    background: url(../images/icons.png) no-repeat -79px -15px;
+}
+
+.wenjian {
+    background: url(../images/icons.png) no-repeat -79px -15px;
+}
+
+.bargain {
+    margin-top: 1px;
+}
+
+.recom {
+    height: 163px;
+    /* background-color: pink; */
+    margin-top: 12px;
+}
+
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+}
+
+.recom_hd img {
+    margin: 30px auto;
+}
+
+.recom_bd ul li {
+    float: left;
+    border-left: 1px solid #dbd6d6;
+}
+
+.recom_bd ul li img {
+    width: 247px;
+    height: 163px;
+    /* 设置图片高宽不用担心上传时图片大小混乱 */
+}
+
+.recom_bd ul li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #dddddd;
+}
+
+
+/* 猜你喜欢模块 */
+
+.like_hd {
+    margin-top: 20px;
+    height: 33px;
+    /* background-color: aqua; */
+}
+
+.like_hd h3 {
+    float: left;
+    line-height: 33px;
+}
+
+.like_hd a {
+    float: right;
+    line-height: 33px;
+}
+
+.like_bd {
+    height: 235px;
+    /* background-color: tomato; */
+    border: 1px solid #ededed;
+}
+
+.like_bd ul li {
+    float: left;
+    height: 150px;
+    width: 190px;
+    /* background-color: burlywood; */
+    margin-left: 9px;
+}
+
+.like_bd ul li img {
+    margin: 15px 30px;
+}
+
+.like_bd .tupian {
+    margin-left: 80px;
+}
+
+.like_bd .jiaju {
+    margin-top: 50px;
+}
+
+.like_bd .muyu {
+    margin-left: 60px;
+}
+
+.like_bd .text li {
+    float: left;
+    width: 190px;
+    height: 65px;
+    /* background-color: violet; */
+    margin-left: 9px;
+    margin-top: 15px;
+    border-right: 1px solid #ededed;
+}
+
+.like_bd .text ul li a {
+    margin-left: 40px;
+    font-size: 12px;
+    color: black;
+}
+
+.like_bd .text ul li a:hover {
+    color: #c81623;
+}
+
+.like_bd .text span {
+    margin-left: 35px;
+    font-size: 18px;
+    color: #df3033;
+}
+
+
+/* 猜你喜欢模块结束 */
+
+
+/* 传智播客模块开始 */
+
+.boke_hd {
+    margin-top: 20px;
+    height: 33px;
+}
+
+.boke_bd {
+    height: 406px;
+    /* background-color: pink; */
+    border: 1px solid #ededed;
+}
+
+.col_404 {
+    float: left;
+    width: 404px;
+    /* background-color: blueviolet; */
+}
+
+.col_229 h4 {
+    width: 200px;
+    height: 39px;
+    line-height: 39px;
+    /* background-color: darkcyan; */
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    border-bottom: 1px dashed #ededed;
+    margin-left: 10px;
+}
+
+.col_229 {
+    float: left;
+    width: 226px;
+    height: 406px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ededed;
+}
+
+.col_229 a {
+    height: 207px;
+    margin: 5px 10px;
+}
+
+.cell_1 {
+    float: left;
+    border-bottom: 1px solid #ededed;
+}
+
+.col_407 {
+    float: left;
+    width: 405px;
+    background-color: #f7f7f7;
+}
+
+.col_407 h4 {
+    /* display: inline-block; */
+    width: 380px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    border-bottom: 1px dashed #ededed;
+    margin-left: 10px;
+}
+
+.cell {
+    float: left;
+    display: block;
+    height: 207px;
+    width: 405px;
+    line-height: 207px;
+    /* background-color: black; */
+    border-bottom: 1px solid #ededed;
+}
+
+.cell_2 {
+    float: left;
+    display: block;
+    width: 204px;
+    height: 160px;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ededed;
+}
+
+.col_164 {
+    float: right;
+    width: 163px;
+    /* background-color: cyan; */
+}
+
+
+/* 传智 播客模块结束 */
+
+
+/* 家用电器模块 */
+
+.box_hd {
+    height: 30px;
+    border-bottom: 1px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab_list ul li {
+    float: left;
+}
+
+.tab_list ul li a {
+    margin: 0 15px;
+}
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.box_bd {
+    height: 361px;
+    /* background-color: aqua; */
+}
+
+.tab_list_item>div {
+    float: left;
+}
+
+.col_210 {
+    width: 210px;
+    height: 361px;
+    background-color: #f9f9f9;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+}
+
+.col_210 ul {
+    padding-left: 20px;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.bb {
+    /* 一般情况下，a如果包含有宽度的盒子，a需要转化为块级元素，这样是安全的做法 */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* 2楼模块 */
+
+.col_2260,
+.col_3326 {
+    float: left;
+    display: block;
+    width: 207px;
+    height: 260px;
+    /* background-color: blueviolet; */
+}
+
+.col_2260 img,
+.col_3326 img {
+    line-height: 260px;
+    margin: 20px 30px;
+}
+
+.col_3321 {
+    float: left;
+    display: block;
+    width: 221px;
+    height: 180px;
+    /* background-color: cornflowerblue; */
+}
+
+.col_3321 img {
+    line-height: 182px;
+    margin: 25px 22px;
+}
+
+.col_2231,
+.col_2232 {
+    float: left;
+    display: block;
+    width: 222px;
+    height: 363px;
+    /* background-color: blueviolet; */
+}
+
+.col_2231 img {
+    line-height: 363px;
+    margin: 60px 25px;
+}
+
+.col_2232 img {
+    line-height: 363px;
+    margin: 60px 40px;
+}
